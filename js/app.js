@@ -45,7 +45,6 @@ const listenersHandler = (otherArr, type) => {
 
 const burgerHandler = (e) => {
   e.preventDefault();
-  console.log(sidebar.classList.contains('visible'))
   if (sidebar.classList.contains('visible')) {
     sidebar.classList.remove('visible');
     burger.classList.remove('chosen');
