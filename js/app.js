@@ -1,8 +1,8 @@
 const HEADER = 'header';
-const FOOTER = 'footer';
+const FOOTER = 'pre-footer';
 const burger = document.getElementById('menu-toogle');
 const sidebar = document.querySelector('.header-tabs-wrapper');
-const footerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.footer-tabs-item'));
+const footerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.pre-footer-tabs-item'));
 const headerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.header-tabs-item'));
 
 const itemHandler = ({ e, arr, otherArr, type }) => {
