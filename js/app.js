@@ -6,7 +6,6 @@ const footerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.
 const headerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.header-tabs-item'));
 
 const itemHandler = ({ e, arr, otherArr, type }) => {
-  console.log(arr)
   if (!e.classList.contains('tabs-active')) {
     const tabItem = e.closest(`.${type}-tabs-item`);
     arr.forEach((item) => {
