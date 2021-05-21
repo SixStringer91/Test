@@ -2,25 +2,25 @@
 	font-family: 'HelveticaNeueCyr-Bold';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+	src: url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
 }
 @font-face {
 	font-family: 'nimbussan';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/NIMBSTB_1.woff') format('woff');
+	src: url('../fonts/NIMBSTB_1.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'HelveticaNeueCyr-Black';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/HelveticaNeueCyr-Black.woff') format('woff');
+	src: url('../fonts/HelveticaNeueCyr-Black.woff') format('woff');
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr-Light';
 
-	src: url('/fonts/HelveticaNeueCyr-Light.woff') format('woff');
+	src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
 }
 
 * {
@@ -34,7 +34,7 @@
 
 header {
 	position: relative;
-	background-image: url('/images/backgound-pic.jpg');
+	background-image: url('../images/backgound-pic.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -47,7 +47,7 @@ header {
 .header-logo-wrapper {
 	position: relative;
 	margin: 0 auto;
-	background-image: url('/images/logo-bg.svg');
+	background-image: url('../images/logo-bg.svg');
 	min-height: 200px;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -241,7 +241,7 @@ main {
 }
 
 .benefits {
-	background-image: url('/images/pre-footer-bg.jpg');
+	background-image: url('../images/pre-footer-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
