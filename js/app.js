@@ -1,24 +1,50 @@
+const HEADER = 'header';
+const FOOTER = 'footer';
 const burger = document.getElementById('menu-toogle');
-const sidebar = document.querySelector('.header-tabs-wrapper')
+const sidebar = document.querySelector('.header-tabs-wrapper');
+const footerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.footer-tabs-item'));
+const headerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.header-tabs-item'));
 
-const headerButtons = [].filter.call(document.querySelectorAll('a'), (el) => el.closest('.header-tabs-item'))
-headerButtons.forEach(el => {
-  el.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (!e.target.classList.contains('tabs-active')) {
-      const tabItem = e.target.closest('.header-tabs-item');
-      headerButtons.forEach((item) => {
-        const tabItemToRemove = item.closest('.header-tabs-item');
-        if (tabItemToRemove.classList.contains('tabs-active')) {
-          tabItemToRemove.classList.remove('tabs-active');
-        }
+const itemHandler = ({ e, arr, otherArr, type }) => {
+  console.log(arr)
+  if (!e.classList.contains('tabs-active')) {
+    const tabItem = e.closest(`.${type}-tabs-item`);
+    arr.forEach((item) => {
+      const tabItemToRemove = item.closest(`.${type}-tabs-item`);
+      if (tabItemToRemove.classList.contains('tabs-active')) {
+        tabItemToRemove.classList.remove('tabs-active');
+      };
+    });
+    tabItem.classList.add('tabs-active');
+    if (otherArr) {
+      const otherElement = otherArr.find((el) => el.innerHTML === e.innerHTML);
+      itemHandler({
+        e: otherElement,
+        arr: otherArr,
+        type: type === HEADER
+          ? FOOTER
+          : HEADER
       });
-      tabItem.classList.add('tabs-active');
     }
-  });
-});
+  }
+}
 
-burger.addEventListener('click', (e) => {
+const listenersHandler = (otherArr, type) => {
+  return (el, _, arr) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const obj = {
+        e: e.target,
+        arr,
+        otherArr,
+        type
+      };
+      itemHandler(obj)
+    });
+  }
+}
+
+const burgerHandler = (e) => {
   e.preventDefault();
   console.log(sidebar.classList.contains('visible'))
   if (sidebar.classList.contains('visible')) {
@@ -28,4 +54,12 @@ burger.addEventListener('click', (e) => {
   };
   sidebar.classList.add('visible');
   burger.classList.add('chosen');
-})
+};
+
+const init = () => {
+  headerButtons.forEach(listenersHandler(footerButtons, HEADER));
+  footerButtons.forEach(listenersHandler(headerButtons, FOOTER));
+  burger.addEventListener('click', burgerHandler);
+};
+
+document.addEventListener('DOMContentLoaded', init)
