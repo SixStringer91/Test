@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-BoldItalic';
 	src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot');
 	src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot?#iefix')
 			format('embedded-opentype'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-Thin';
 	src: url('../fonts/HelveticaNeueCyr-Thin.eot');
 	src: url('../fonts/HelveticaNeueCyr-Thin.eot?#iefix')
 			format('embedded-opentype'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-Italic';
 	src: url('../fonts/HelveticaNeueCyr-Italic.eot');
 	src: url('../fonts/HelveticaNeueCyr-Italic.eot?#iefix')
 			format('embedded-opentype'),
@@ -77,7 +77,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-UltraLight';
 	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
 	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix')
 			format('embedded-opentype'),
@@ -90,7 +90,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-UltraLightItalic';
 	src: url('../fonts/HelveticaNeueCyr-UltraLightItalic.eot');
 	src: url('../fonts/HelveticaNeueCyr-UltraLightItalic.eot?#iefix')
 			format('embedded-opentype'),
@@ -103,7 +103,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-ThinItalic';
 	src: url('../fonts/HelveticaNeueCyr-ThinItalic.eot');
 	src: url('../fonts/HelveticaNeueCyr-ThinItalic.eot?#iefix')
 			format('embedded-opentype'),
@@ -116,7 +116,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-Medium';
 	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
 	src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix')
 			format('embedded-opentype'),
@@ -142,7 +142,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-BlackItalic';
 	src: url('../fonts/HelveticaNeueCyr-BlackItalic.eot');
 	src: url('../fonts/HelveticaNeueCyr-BlackItalic.eot?#iefix')
 			format('embedded-opentype'),
@@ -155,7 +155,7 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'HelveticaNeueCyr-Roman';
 	src: url('../fonts/HelveticaNeueCyr-Roman.eot');
 	src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix')
 			format('embedded-opentype'),
@@ -419,7 +419,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-top: 68px;
+	padding-top: 71px;
 	padding-bottom: 95px;
 }
 .benefits-pretitle {
@@ -434,13 +434,14 @@ main {
 	color: #48890a;
 }
 .benefits-text {
-	font-family: Arial;
-	font-weight: regular;
+	font-family: 'Arial';
+	font-style: normal;
 	font-size: 14px;
 	line-height: 25px;
 	padding-top: 24px;
-	padding-left: 2px;
+	padding-left: 3px;
 	padding-bottom: 5px;
+	text-shadow: -1px 0px 0px rgba(150, 150, 150,1);
 }
 .prefoooter-btn {
 	padding-left: 3px;
@@ -532,6 +533,7 @@ main {
 	font-family: Arial;
 	font-size: 12px;
 	line-height: 20px;
+	
 }
 
 .footer-about-wrapper :last-child {
