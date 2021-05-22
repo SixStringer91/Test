@@ -230,8 +230,8 @@ header {
 	z-index: 0;
 	background: radial-gradient(
 		ellipse at top,
-		rgba(19, 71, 8, 0.6) 30%,
-		transparent 60%
+		rgba(19, 71, 8, 0.8) 30%,
+		transparent 70%
 	);
 	background-size: 50%;
 	background-position: center;
@@ -316,6 +316,7 @@ header {
 	border-radius: 4px;
 }
 .header-nursey-title {
+	font-weight: 100;
 	text-align: center;
 	font-family: 'HelveticaNeueCyr-Light';
 	font-size: 32px;
@@ -411,7 +412,7 @@ main {
 .benefits {
 	background-image: url('../images/pre-footer-bg.jpg');
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: right 38% bottom 88%;
 	background-size: cover;
 }
 .benefits-wrapper {
@@ -441,7 +442,7 @@ main {
 	padding-top: 24px;
 	padding-left: 3px;
 	padding-bottom: 5px;
-	text-shadow: -1px 0px 0px rgba(150, 150, 150,1);
+	text-shadow: -1px 0px 0px rgba(150, 150, 150, 1);
 }
 .prefoooter-btn {
 	padding-left: 3px;
@@ -494,7 +495,6 @@ main {
 
 .pre-footer-tabs-item a:hover {
 	color: #8dc705;
-
 }
 .menu-toogle {
 	flex-direction: column;
@@ -535,7 +535,6 @@ main {
 	font-family: Arial;
 	font-size: 12px;
 	line-height: 20px;
-	
 }
 
 .footer-about-wrapper :last-child {
