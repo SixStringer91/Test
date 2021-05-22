@@ -225,17 +225,16 @@ header {
 	margin: 0 auto;
 }
 
+.header-shadow-wrapper {
+	background-image: url('../images/shadow-layer.png');
+	background-position: center top -10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .header-tabs-wrapper {
 	margin-top: -38px;
 	z-index: 0;
-	background: radial-gradient(
-		ellipse at top,
-		rgba(19, 71, 8, 0.8) 30%,
-		transparent 70%
-	);
-	background-size: 50%;
-	background-position: center;
-	background-repeat: no-repeat;
 	padding-bottom: 26px;
 	padding-right: 81px;
 }
@@ -564,6 +563,11 @@ main {
 	.header-nursey-title {
 		font-size: 22px;
 	}
+
+	.header-shadow-wrapper {
+		background: none;
+	}
+
 	.header-tabs-wrapper {
 		margin-top: 0;
 		background: #fff;
