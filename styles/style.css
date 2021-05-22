@@ -482,6 +482,7 @@ main {
 	text-transform: uppercase;
 	transition: color 0.5s;
 	-webkit-transition: color 0.5s;
+	cursor: pointer;
 }
 .pre-footer-list .tabs-active {
 	background-color: transparent;
@@ -493,6 +494,7 @@ main {
 
 .pre-footer-tabs-item a:hover {
 	color: #8dc705;
+
 }
 .menu-toogle {
 	flex-direction: column;
@@ -564,7 +566,6 @@ main {
 		font-size: 22px;
 	}
 	.header-tabs-wrapper {
-		overflow-y: scroll;
 		margin-top: 0;
 		background: #fff;
 		position: fixed;
